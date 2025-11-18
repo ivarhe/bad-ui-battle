@@ -339,7 +339,7 @@ export default function Step5Cricket({ onNext }: Step5CricketProps) {
         <div className="mb-4 bg-gray-100 rounded-lg p-4 border-2 border-gray-300">
           <div className="relative w-full aspect-square max-w-md mx-auto">
             <img
-              src="/cricket.jpg"
+              src="/cricket.png"
               alt="Grid with cricket location"
               className="w-full h-full object-contain rounded border-2 border-gray-400"
               onError={(e) => {
@@ -352,8 +352,8 @@ export default function Step5Cricket({ onNext }: Step5CricketProps) {
                     <div class="w-full h-full bg-green-200 rounded border-2 border-gray-400 flex items-center justify-center">
                       <div class="text-center p-4">
                         <div class="text-4xl mb-2">🦗</div>
-                        <p class="text-sm text-gray-600">Grid image (cricket-grid.jpg)</p>
-                        <p class="text-xs text-gray-500 mt-2">Please add cricket-grid.jpg to the public folder</p>
+                        <p class="text-sm text-gray-600">Grid image (cricket.png)</p>
+                        <p class="text-xs text-gray-500 mt-2">Image failed to load</p>
                       </div>
                     </div>
                   `;
