@@ -96,7 +96,7 @@ export function BirthdayPicker({ className, value, onChange, ...props }: Birthda
           lineHeight: '1.2',
         }}
       >
-        hvor vil du reise?
+        Bekreft fødselsdato
       </h1>
 
       <div style={{ marginBottom: '24px' }}>
