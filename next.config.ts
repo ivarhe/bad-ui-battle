@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 // For GitHub Pages: if your repo is username.github.io, use ''
 // Otherwise, use '/repository-name'
-const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'tmp';
-const basePath = process.env.NODE_ENV === 'production' && repoName !== 'username.github.io' 
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'bad-ui-battle';
+const basePath = process.env.NODE_ENV === 'production' && repoName !== 'ivarhe.github.io' 
   ? `/${repoName}` 
   : '';
 
