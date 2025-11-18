@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bad UI Battle - Worst Ticket Flow 🎫💀
 
-## Getting Started
+This is a **terrible UX experience** created for Bad UI Battle, simulating the worst possible flow to show your ticket to a ticket inspector. Based on the Ruter → Retur rebrand scenario from Norway.
+
+## 🎯 The Experience
+
+Experience 7 intentionally frustrating steps:
+
+1. **Old Ruter App** - Told you need to download new app
+2. **Download Retur** - Slow, annoying download with fake errors
+3. **New Retur App** - Unnecessary loading delays
+4. **Reauthentication** - Digipost code you can't paste, hard to read
+5. **Human Verification** - Click crickets that appear for less than a second
+6. **Birthday Verification** - Re-enter info because "we can't store it longer than 2 hours"
+7. **Show Ticket** - Finally see your ticket (which expires in 30 seconds)
+
+## 🚀 Getting Started
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to experience the horror.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/page.tsx` - Main flow controller
+- `app/components/Step1OldRuter.tsx` - Old app warning
+- `app/components/Step2Download.tsx` - App store download
+- `app/components/Step3NewRetur.tsx` - New app welcome
+- `app/components/Step4Reauth.tsx` - Digipost authentication
+- `app/components/Step5Cricket.tsx` - Human verification game
+- `app/components/Step6Birthday.tsx` - Birthday verification (placeholder for custom component)
+- `app/components/Step7Ticket.tsx` - Final ticket display
 
-## Learn More
+## 🏆 Features (That Make It Terrible)
 
-To learn more about Next.js, take a look at the following resources:
+- ✅ Annoying delays and loading screens
+- ✅ Confusing navigation
+- ✅ Hard-to-read text and codes
+- ✅ No paste functionality
+- ✅ Frustrating mini-games
+- ✅ Expiring tickets
+- ✅ Poor visual design
+- ✅ Unhelpful error messages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Deployment to GitHub Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This app is configured for GitHub Pages deployment:
 
-## Deploy on Vercel
+1. **Push to GitHub**: Push your code to a GitHub repository
+2. **Enable GitHub Pages**: 
+   - Go to your repository Settings → Pages
+   - Under "Source", select "GitHub Actions"
+3. **Automatic Deployment**: 
+   - The GitHub Actions workflow (`.github/workflows/deploy.yml`) will automatically build and deploy on every push to `main`
+   - The app will be available at `https://yourusername.github.io/repository-name`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Note**: If your repository name is `username.github.io`, update `next.config.ts` to use an empty `basePath`. Otherwise, the basePath is automatically set to `/repository-name`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Notes
+
+- Step 6 (Birthday) uses a custom horrible flow component that requires users to calculate their age in days
+- Each step is intentionally designed to be frustrating
+- The ticket expires quickly to add extra pressure
+
+**Good luck showing your ticket to the inspector!** 🚌
