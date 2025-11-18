@@ -339,7 +339,7 @@ export default function Step5Cricket({ onNext }: Step5CricketProps) {
         <div className="mb-4 bg-gray-100 rounded-lg p-4 border-2 border-gray-300">
           <div className="relative w-full aspect-square max-w-md mx-auto">
             <img
-              src="/cricket.png"
+              src={`${process.env.NODE_ENV === 'production' ? '/bad-ui-battle' : ''}/cricket.png`}
               alt="Grid with cricket location"
               className="w-full h-full object-contain rounded border-2 border-gray-400"
               onError={(e) => {
